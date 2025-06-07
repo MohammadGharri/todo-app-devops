@@ -1,8 +1,10 @@
 from flask import Flask, jsonify
 from flask_cors import CORS
 
+
 app = Flask(__name__)
-CORS(app)  # اجازه دسترسی از همه جا
+CORS(app)
+
 
 @app.route("/api/todos")
 def get_todos():
@@ -10,7 +12,6 @@ def get_todos():
         {"id": 1, "title": "🔥 Learn Docker (updated)", "done": False},
         {"id": 2, "title": "Build a CI/CD pipeline", "done": False}
     ])
-
 
 
 if __name__ == "__main__":

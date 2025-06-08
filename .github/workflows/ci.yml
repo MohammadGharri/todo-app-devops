@@ -32,6 +32,12 @@ jobs:
       run: |
         echo "✅ Flask backend setup successful!"
 
+    - name: Run tests with pytest
+      run: |
+        cd backend
+        pytest
+
+
 
 
 

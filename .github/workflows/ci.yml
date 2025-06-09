@@ -37,6 +37,11 @@ jobs:
         cd backend
         pytest
 
+    - name: Build Docker image
+      run: |
+        docker build -t todo-app-backend ./backend
+
+
 
 
 
